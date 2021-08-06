@@ -41,11 +41,6 @@ def linear2():
     # 划分数据集
     x_train, x_test, y_train, y_test = train_test_split(dailyActivity_selector, Calories, random_state=22)
 
-    # 标准化
-    transfer = StandardScaler()
-    x_train = transfer.fit_transform(x_train)
-    x_test = transfer.transform(x_test)
-
     # 预估器
     estimator = SGDRegressor(learning_rate="constant", eta0=0.01, max_iter=10000)
     estimator.fit(x_train, y_train)
@@ -87,7 +82,6 @@ def linear3():
     print("预测卡路里：\n", y_predict)
     error = mean_squared_error(y_test,y_predict)
     print("岭回归均方误差为：\n",error)
-
 
 
 if __name__ == "__main__":
