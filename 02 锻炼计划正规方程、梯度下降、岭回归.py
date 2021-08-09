@@ -33,7 +33,7 @@ def linear1():
     print("正规方程均方误差为：\n",error)
 
 def linear2():
-    # 梯度下降的优化方法对波士顿放假进行预测
+    # 梯度下降的优化方法进行预测
     # 获取数据
     dailyActivity_selector = pd.read_csv(r"C:\Users\Lenovo\Desktop\FitBit Fitness Tracker Data(FitBit Fitness追踪器数据）\dailyActivity_selector.csv")
     Calories = pd.read_csv(r"C:\Users\Lenovo\Desktop\FitBit Fitness Tracker Data(FitBit Fitness追踪器数据）\Calories.csv")
@@ -56,7 +56,7 @@ def linear2():
     print("梯度下降均方误差为：\n", error)
 
 def linear3():
-    # 岭回归的优化方法对波士顿放假进行预测
+    # 岭回归的优化方法进行预测
     # 获取数据
     dailyActivity_selector = pd.read_csv(r"C:\Users\Lenovo\Desktop\FitBit Fitness Tracker Data(FitBit Fitness追踪器数据）\dailyActivity_selector.csv")
     Calories = pd.read_csv(r"C:\Users\Lenovo\Desktop\FitBit Fitness Tracker Data(FitBit Fitness追踪器数据）\Calories.csv")
